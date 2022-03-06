@@ -1,7 +1,7 @@
 :root {
   --accent: #5271ff;
   --accent-light: #5297ff;
-  --sandybrown: #ffbd59; 
+  --accent-contrast: #ffbd59; 
   --pure-white: #fff;
 }
 
@@ -72,5 +72,5 @@ body {
 background-color: var(--accent-light);
 }
 nav a:hover {
-    color: var(--sandybrown);
+    color: var(--accent-contrast);
 }
