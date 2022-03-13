@@ -35,7 +35,7 @@
             <a href="#education" class="header-menu-link">Education</a>
           </li>
           <li class="header-menu-item">
-            <a href="#language" class="header-menu-link">Language Knowledges</a>
+            <a href="#language" class="header-menu-link">Languages</a>
           </li>
           <li class="header-menu-item">
             <a href="#contacts" class="header-menu-link">Contacts</a>
@@ -75,17 +75,17 @@
         <h2 class="section-title">contacts</h2>
         <ul>
         <li>
-          <h4>Location</h4>
+          <h4 class="icon-loc">Location</h4>
           <p>Bishkek, Kyrgyz Republic</p>
         </li>
         <li>
-          <h4>Phone number</h4>
-          <a href="tel:+996772148138">+ (996) 772-148-138</a>
+          <h4 class="icon-phone">Phone number</h4>
+          <p><a href="tel:+996772148138">+ (996) 772-148-138</a></p>
         </li>
         <li>
-          <h4>E-mail</h4>
-          <a href="mailto:kanykei.abdi.kk@gmail.com"
-            >kanykei.abdi.kk@gmail.com</a>
+          <h4 class="icon-mail">E-mail</h4>
+          <p><a href="mailto:kanykei.abdi.kk@gmail.com"
+            >kanykei.abdi.kk@gmail.com</a></p>
         </li>
       </ul>
       </div>
@@ -135,20 +135,23 @@
                 </code>
               </pre>
 
-          <p><b>[CSS]:</b> What value can't have a border-style?</p> 
-
-
+          <p><b>[CSS]:</b> Absolute positioning relative to the  &lt;body&gt; element</p> 
           <pre>
-                <code>                  
-                
-                    const sum = eval("10*10+5");
+            <code>                  
+              body {
+                width: 500px;
+                margin: 0 auto;
+                position: relative;
+              }
 
-                    console.log(sum);
-
-
-            &#9675; inset     &#9675; dotted     &#9675; groove     &bull; color
-                </code> 
-              </pre> 
+              .positioned {
+                position: absolute;
+                background: yellow;
+                top: 30px;
+                left: 30px;
+              }
+            </code> 
+          </pre> 
 
           <p><b>[JavaScript]:</b> What will be output to the console?</p>
             <pre>
@@ -181,7 +184,7 @@
     </section>
     <section id="language" class="language section">
       <div class="container">
-        <h2 class="section-title">Language Knowledges</h2>
+        <h2 class="section-title">Languages Knowledge</h2>
         <ul>
           <li><b>Kyrgyz</b> - Mother Tongue</li>
           <li><b>Russian</b> - Professional Fluency</li>

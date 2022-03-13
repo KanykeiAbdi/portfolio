@@ -108,7 +108,6 @@ nav a:hover {
 
 .intro img {
   width: 250px; 
-  height: 250px;
   border-radius: 50%;
 }
 
@@ -139,6 +138,76 @@ nav a:hover {
 
 .contacts li {
   text-align: center;
+}
+
+.icon-loc {
+  display: inline-block;
+  padding: 0 25px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+/*.icon-loc::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-image: url("/images/icons/location.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}*/
+
+.icon-loc::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  background-image: url("/images/icons/location.svg");
+  width: 20px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-phone {
+  display: inline-block;
+  padding: 0 25px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.icon-phone::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  background-image: url("/images/icons/whatsapp-1.svg");
+  stroke-width: 10px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-mail {
+  display: inline-block;
+  padding: 0 25px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.icon-mail::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  background-image: url("/images/icons/email.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .contacts li a{
