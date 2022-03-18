@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -49,6 +49,7 @@ body {
 }
 
 .header nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +67,8 @@ nav a:hover {
 }
 
 .header-menu {
+  position: absolute;
+  right: 0;
   width: 75%;
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +92,14 @@ nav a:hover {
   background-color: var(--accent-light);
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-show {
+  display: flex;
+}
+
 
 /*intro section*/
 .intro {
@@ -99,7 +110,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 25px;
+  gap: 30px;
 }
 
 .intro-left {
@@ -107,6 +118,7 @@ nav a:hover {
 }
 
 .intro img {
+  margin: 0 auto;
   width: 250px; 
   border-radius: 50%;
 }
@@ -222,7 +234,8 @@ nav a:hover {
 /*Skills section*/
 .skills {
   color: var(--pure-white);
-  background-color: var(--accent);
+  background-color: var(--accent); 
+   
 }
 
 .skills ul {
@@ -280,7 +293,7 @@ nav a:hover {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*(3, 1fr)*/
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
 }
 
@@ -295,7 +308,7 @@ nav a:hover {
 .portfolio img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /*cover*/
+  object-fit: cover;
 }
 
 .portfolio ul a {
@@ -392,3 +405,112 @@ nav a:hover {
 } 
 
 
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .header-menu-item {
+   display: none;
+  }
+
+  .menu-toggle {
+   display: inline;
+  }
+
+  .intro-inner {
+   display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+  }
+
+  .intro-left {
+    width: 50%;
+  }
+
+  .intro img {
+    width: 230px; 
+    border-radius: 50%;
+  }
+
+  .intro-right {
+    width: 50%;
+  }
+
+  .contacts ul {
+    gap: 15px;
+  }
+
+  .portfolio ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .portfolio img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 690px) {
+  .intro-inner {
+    display: block;
+  }
+
+  .intro-left {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .code-example pre {
+    width: 100%;
+  }
+}
+
+@media (max-width: 393px) {
+  .intro-inner {
+     display: block;
+  }
+
+  .intro-inner img {
+    display: block;
+    margin: 0 auto;
+    width: 230px; 
+    border-radius: 50%;
+  }
+
+  .contacts ul {
+    display: block;
+  }
+
+  .code-example pre {
+  width: 100%;
+  }
+
+  .portfolio ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .portfolio img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .footer ul {
+    display: block;
+  } 
+}
